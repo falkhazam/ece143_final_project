@@ -6,7 +6,9 @@
 
 ## Dependencies:
 
-1. argopy - found here: [argopy](https://github.com/euroargodev/argopy), can also be installed with "pip install argopy" or conda
+1. [argopy](https://github.com/euroargodev/argopy) - can be installed with "pip install argopy" or conda
+2. [matplotlib](https://matplotlib.org/) - can be installed with "pip install matplotlib" or conda
+3. [numpy](https://numpy.org/) - can be installed with "pip install numpy" or conda
 
 
 ## Resources:
