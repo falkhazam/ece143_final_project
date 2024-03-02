@@ -19,3 +19,5 @@ if __name__ == "__main__" :
     print(get_argo())
 
     print(argo.status())
+
+    argo.dashboard()
