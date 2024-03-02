@@ -9,6 +9,8 @@
 1. [argopy](https://github.com/euroargodev/argopy) - can be installed with "pip install argopy" or conda
 2. [matplotlib](https://matplotlib.org/) - can be installed with "pip install matplotlib" or conda
 3. [numpy](https://numpy.org/) - can be installed with "pip install numpy" or conda
+4. [cartopy](https://scitools.org.uk/cartopy/docs/latest/) - can be installed with "pip install cartopy" or conda
+5. [Ipython](https://ipython.org/) - can be installed with "pip install Ipython" or conda
 
 
 ## Resources:
