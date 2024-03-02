@@ -39,8 +39,9 @@ fig, ax = scatter_map(df,
                         traj=False,  # Because some floats do weird things around 180/-180
                         set_global=False,
                         legend_title='%s data mode' % param)
-ax.set_title("Data mode for '%s' (%s)\n%s profiles from the %s" % (param_info['prefLabel'], 
+ax.set_title("title" % (param_info['prefLabel'], 
                                                                    param, 
                                                                    "{:,}".format(idx.N_MATCH), 
                                                                    idx.convention_title)
             )
+plt.show()
