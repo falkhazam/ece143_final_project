@@ -43,4 +43,5 @@ I recommend we just stick to Argo Float data. There's a whole python library ded
 - [ ] Plot average temperature vs depth
 - [ ] Plot temperature vs time on the California Coast
 - [ ] Plot interpolation of currents from buoy displacement
+- [ ] Plot correlation heatmap
 - [ ] Make presentation
