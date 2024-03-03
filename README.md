@@ -31,13 +31,16 @@ I recommend we just stick to Argo Float data. There's a whole python library ded
 ### Week 1
 - [x] Make private Github repository for easy group work
 - [x] Figure out which modules would help us the most
-- [ ] Data allocation (select datasets, write code to import data into best format to work with)
+- [X] Data allocation (select datasets, write code to import data into best format to work with)
 
 ### Week 2
-- [ ] Visualize data, look for trends
-- [ ] Find best sections of data to focus on for the presentation
+- [x] Visualize data, look for trends
+- [x] Find best sections of data to focus on for the presentation
 
 ### Week 3
-- [ ] Plot data spatially
-- [ ] Plot data temporally
-- [ ] Finalize plots and visuals for presentation
+- [ ] Plot global temperature at various depths
+- [ ] Plot average temperature vs latitude
+- [ ] Plot average temperature vs depth
+- [ ] Plot temperature vs time on the California Coast
+- [ ] Plot interpolation of currents from buoy displacement
+- [ ] Make presentation
