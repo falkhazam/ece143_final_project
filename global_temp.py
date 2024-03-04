@@ -46,5 +46,5 @@ if __name__ == "__main__" :
     ax.set_title('Sea Surface Temperature')
     gridlines = ax.gridlines(draw_labels=True)
     
-    plt.savefig('plot.png')
+    plt.savefig('figures/global_temp.png')
     plt.show()
