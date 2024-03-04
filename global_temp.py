@@ -1,8 +1,6 @@
-from argopy import ArgoIndex  #  This is the class to work with Argo index content
-from argopy import ArgoNVSReferenceTables  # This is the class to retrieve data from Argo reference tables
-from argopy.plot import scatter_map  # This is a function to easily make maps 
 import argopy
 import numpy as np
+import pandas as pd
 from matplotlib import pyplot as plt
 
 
@@ -10,22 +8,26 @@ if __name__ == "__main__" :
 
     argopy.set_options(src='erddap', dataset='phy', mode='standard')
 
-    ArgoSet = argopy.DataFetcher().region([-180,180,-90,90, 0, 10, '2011-01', '2011-06'])
+    print("Importing data...")
+
+    ArgoSet = argopy.DataFetcher().region([-180,180,-90,90, 0, 5, '2015-01-01', '2015-01-10'])
     ds = ArgoSet.data.argo.point2profile().to_dataframe()
     df = ArgoSet.index
 
+    print("Finished importing data!")
+
     # Define a parameter to work with:
     param = 'TEMP'
-    # print(len(ds[param]))
-    fig, ax = scatter_map(ds,
-                          hue=param,
-                          figsize=(10,6),
-                          set_global=True,
-                          traj=False,
-                          markersize=2,
-                          markeredgecolor=None,
-                          legend_title='Temp'
-                   )
+    
+    fig, ax = argopy.plot.scatter_map(ds,
+                                      hue=param,
+                                      figsize=(10,6),
+                                      set_global=True,
+                                      traj=False,
+                                      markersize=2,
+                                      markeredgecolor=None,
+                                      legend_title='Temp'
+                                    )
     plt.show()
 
 
