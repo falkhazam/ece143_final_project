@@ -1,7 +1,11 @@
 # File Descriptions:
 
-1. import_methods.py - methods for importing the required data
-2. plot_data.py - wrapper script for plotting the data
+1. correlation_heatmap.py - correlation heatmap of parameters
+2. currents.py - global current vectors from buoy dispalcement (small time scale)
+3. global_temp.py - SST around the globe
+4. temp_vs_depth.py - normalized temp vs depth plots (similar to latitude plot, split into latitude bins first and normalize each bin to remove latitude dependency)
+5. temp_vs_latitude - normalized temp vs latitude plots (normalized wrt longitude, maybe average the temp across each line of latitude? i.e. splitinto 180 latitude bins and average each bin before normalizing)
+6. temp_vs_time - CA coast temp vs time plots
 
 
 ## Dependencies:
