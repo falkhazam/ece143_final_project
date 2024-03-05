@@ -15,16 +15,18 @@ if __name__ == "__main__":
     temp = np.array(df['TEMP'])
     lat = np.array(df['LATITUDE'])
 
-    plt.scatter(lat, temp, s=1)
+    abs_lat = np.abs(lat)
+
+    plt.scatter(abs_lat, temp, s=1)
     plt.grid(True)
 
-    plt.title('Temperature Vs. Latitude')
+    plt.title('Temperature Vs. Absolute Value of Latitude')
 
     # Adding labels to the axes
-    plt.xlabel('Latitude')
+    plt.xlabel('|Latitude|')
     plt.ylabel('Temperature')
 
-    plt.savefig('figures/temp_vs_latitude.png')
+    plt.savefig('figures/temp_vs_abs(latitude).png')
     plt.show()
 
 
