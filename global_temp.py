@@ -18,7 +18,7 @@ if __name__ == "__main__" :
     # print("Time to import : ", time.time()-t0)
     # ds = ArgoSet.data.argo.point2profile().to_dataframe()
     # print("Time to get data from DataFetcher : ", time.time()-t0)
-    # ds.to_csv('data.csv') 
+    # ds.to_csv('data.csv')
 
     # if getting the data from a csv file, uncomment the following 1 line :
     df = pd.read_csv('data.csv')
@@ -42,7 +42,7 @@ if __name__ == "__main__" :
 
     # title and label :
     cbar = fig.colorbar(global_temp, location='bottom')
-    cbar.set_label('Celcius')
+    cbar.set_label('Celsius')
     ax.set_title('Sea Surface Temperature')
     gridlines = ax.gridlines(draw_labels=True)
     
