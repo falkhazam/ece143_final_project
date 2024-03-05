@@ -36,7 +36,7 @@ if __name__ == "__main__" :
 
     # title and label :
     cbar = fig.colorbar(global_temp, location='bottom')
-    cbar.set_label('Celcius')
+    cbar.set_label('Celsius')
     ax.set_title('Sea Surface Temperature')
     gridlines = ax.gridlines(draw_labels=True) # shows lat/long
     
