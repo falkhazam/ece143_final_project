@@ -1,6 +1,28 @@
 import argopy
 import numpy as np
 from matplotlib import pyplot as plt
+import pandas as pd
 
+if __name__ == "__main__":
+    # if getting the data from a csv file, uncomment the following 1 line :
+    df_raw = pd.read_csv('data.csv')
 
-# if __name__ == "__main__" :
+    # Remove rows where temp is None
+
+    df = df_raw.dropna(subset=['TEMP'])
+
+    # Define the variables to work with:
+    temp = np.array(df['TEMP'])
+    lat = np.array(df['LATITUDE'])
+
+    plt.scatter(lat, temp, s=1)
+    plt.grid(True)
+
+    plt.title('Temperature Vs. Time')
+
+    # Adding labels to the axes
+    plt.xlabel('Time')
+    plt.ylabel('Temperature')
+
+    plt.savefig('figures/temp_vs_time.png')
+    plt.show()
