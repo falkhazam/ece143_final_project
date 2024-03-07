@@ -5,18 +5,24 @@ from matplotlib import pyplot as plt
 import time
 import cartopy.crs as ccrs
 
-
+# Notes: 
+# 1. The script will take longer to run the first rime it is run (~ 5 min)
+# 2. If you get a timeout error, try running on a different machine or a better network
+# 3. After the first time running, .csv files will be stored locally for faster recall
+# 4. Timeout limitations are due to Argo servers, not python file.
 
 # define parameters :
 
-dates_list = [['2015-01', '2015-01'], ['2015-04', '2015-05'], ['2015-07', '2015-08'], ['2015-10', '2015-11']]
+dates_list = [['2015-01', '2015-02'], ['2015-04', '2015-05'], ['2015-07', '2015-08'], ['2015-10', '2015-11']]
 argopy.set_options(src='erddap', dataset='phy', mode='standard')
 
 if __name__ == "__main__" :
 
     for i, dates in enumerate(dates_list) :
 
-        file = 'data'+str(i)+'.csv'
+        file = 'data'+str(i+1)+'.csv'
+
+        print("Starting task " + str(i+1))
 
         try :
             df = pd.read_csv(file)
@@ -49,5 +55,5 @@ if __name__ == "__main__" :
         ax.set_title('Sea Surface Temperature' + ' ' + dates[0] + ' to ' + dates[1])
         gridlines = ax.gridlines(draw_labels=True) # shows lat/long
         
-        plt.savefig('figures/global_temp' + str(i) + '.png')
-        plt.show()
+        plt.savefig('figures/global_temp' + str(i+1) + '.png')
+        # plt.show()
