@@ -1,4 +1,7 @@
-# File Descriptions:
+# Introduction:
+Welcome to Group 4's ECE 143 final project. Here is a collection of code dedicated to plotting sea temperature data at various geographic locations as well as depth profiles.
+
+## File Descriptions:
 
 1. correlation_heatmap.py - correlation heatmap of parameters
 2. currents.py - global current vectors from buoy dispalcement (small time scale)
@@ -15,6 +18,7 @@
 3. [numpy](https://numpy.org/) - can be installed with "pip install numpy" or conda
 4. [cartopy](https://scitools.org.uk/cartopy/docs/latest/) - can be installed with "pip install cartopy" or conda
 5. [Ipython](https://ipython.org/) - can be installed with "pip install Ipython" or conda
+6. Python3.9.x
 
 
 ## Resources:
@@ -24,11 +28,53 @@
 3. [Argopy Documentation](https://argopy.readthedocs.io/en/latest/)
 
 ## Data:
-1. [CDIP](https://cdip.ucsd.edu/themes/cdip?zoom=auto&tz=UTC&ll_fmt=dm&numcolorbands=10&palette=cdip_classic&high=6.096&r=999&un=1&pb=1&d2=p70)
-2. [Argo](https://argo.ucsd.edu/data/)
+1. [Argo](https://argo.ucsd.edu/data/)
+2. [CDIP](https://cdip.ucsd.edu/themes/cdip?zoom=auto&tz=UTC&ll_fmt=dm&numcolorbands=10&palette=cdip_classic&high=6.096&r=999&un=1&pb=1&d2=p70)
 
-## Notes:
-I recommend we just stick to Argo Float data. There's a whole python library dedicated to using and visualizing the data, and CDIP is not as well documented and has weird file formats. -Gabriel
+
+## Getting Started
+
+This is an example of how you may give instructions on setting up your project locally.
+To get a local copy up and running follow these simple example steps.
+
+### Prerequisites
+
+This is an example of how to list things you need to use the software and how to install them.
+* npm
+  ```sh
+  npm install npm@latest -g
+  ```
+
+### Installation
+
+_Below is an example of how you can instruct your audience on installing and setting up your app. This template doesn't rely on any external dependencies or services._
+
+1. Clone the repo
+   ```sh
+   git clone https://github.com/your_username_/Project-Name.git
+   ```
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
+
+<!-- USAGE EXAMPLES -->
+## Usage
+
+Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
+
+_To generate the sea surface temperature plots on a global scale run:_
+    ```sh
+    python global_temp.py
+    ```
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
+
+
+
+
 
 ## Tasks:
 
@@ -42,10 +88,10 @@ I recommend we just stick to Argo Float data. There's a whole python library ded
 - [x] Find best sections of data to focus on for the presentation
 
 ### Week 3
-- [ ] Plot global temperature at various depths
-- [ ] Plot average temperature vs latitude
-- [ ] Plot average temperature vs depth
-- [ ] Plot temperature vs time on the California Coast
-- [ ] Plot interpolation of currents from buoy displacement
-- [ ] Plot correlation heatmap
-- [ ] Make presentation
+- [x] Plot global temperature at various depths
+- [x] Plot average temperature vs latitude
+- [x] Plot average temperature vs depth
+- [x] Plot temperature vs time on the California Coast
+- [x] Plot interpolation of currents from buoy displacement
+- [x] Plot correlation heatmap
+- [x] Make presentation
