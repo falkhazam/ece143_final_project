@@ -11,17 +11,6 @@ Welcome to Group 4's ECE 143 final project. Here is a collection of code dedicat
 6. temp_vs_time - CA coast temp vs time plots
 
 
-## Resources:
-
-1. [Euro-Argo Github Page](https://github.com/euroargodev)
-2. [Matplotlib Documentation](https://matplotlib.org/stable/users/index)
-3. [Argopy Documentation](https://argopy.readthedocs.io/en/latest/)
-
-## Data:
-1. [Argo](https://argo.ucsd.edu/data/)
-2. [CDIP](https://cdip.ucsd.edu/themes/cdip?zoom=auto&tz=UTC&ll_fmt=dm&numcolorbands=10&palette=cdip_classic&high=6.096&r=999&un=1&pb=1&d2=p70)
-
-
 ## Getting Started
 
 This is an example of how you may give instructions on setting up your project locally.
@@ -45,8 +34,7 @@ _Getting the code to run can be done in one step._
    git clone https://github.com/falkhazam/ece143_final_project.git
    ```
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
+<!-- <p align="right">(<a href="#readme-top">back to top</a>)</p> -->
 
 
 ## Usage
@@ -58,9 +46,18 @@ _To generate the sea surface temperature plots on a global scale run:_
     python global_temp.py
     ```
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<!-- <p align="right">(<a href="#readme-top">back to top</a>)</p> -->
 
 
+## Resources:
+
+1. [Euro-Argo Github Page](https://github.com/euroargodev)
+2. [Matplotlib Documentation](https://matplotlib.org/stable/users/index)
+3. [Argopy Documentation](https://argopy.readthedocs.io/en/latest/)
+
+## Data:
+1. [Argo](https://argo.ucsd.edu/data/)
+2. [CDIP](https://cdip.ucsd.edu/themes/cdip?zoom=auto&tz=UTC&ll_fmt=dm&numcolorbands=10&palette=cdip_classic&high=6.096&r=999&un=1&pb=1&d2=p70)
 
 
 
