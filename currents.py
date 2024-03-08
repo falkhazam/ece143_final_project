@@ -50,11 +50,16 @@ def plot_currents(min_lon, max_lon, min_lat, max_lat, min_depth, max_depth,
     else:
         import argopy
         f = argopy.DataFetcher()
-        f = f.region([min_lon, max_lon, min_lat, max_lat, min_depth, max_depth, start_date, end_date])
-        df = f.data.to_dataframe()
-        df.to_csv('data.csv', index=False)
-
-    new_df = df[['PLATFORM_NUMBER','LONGITUDE','LATITUDE']]
+        count = 0
+        while count <= 100:
+            try:
+                f = f.region([min_lon, max_lon, min_lat, max_lat, min_depth, max_depth, start_date, end_date])
+                df = f.data.to_dataframe()
+                df.to_csv('data.csv', index=False)
+                break
+            except:
+                count += 1
+    new_df = df[['PLATFORM_NUMBER','LONGITUDE','LATITUDE','TEMP']]
     df = new_df
     grouped_df = df.groupby('PLATFORM_NUMBER')
     dataframes_by_id = [group for _, group in grouped_df]
@@ -81,7 +86,7 @@ def plot_currents(min_lon, max_lon, min_lat, max_lat, min_depth, max_depth,
     ax.set_xlabel('Longitude', fontsize=12, labelpad=10)
     ax.set_ylabel('Latitude', fontsize=12, labelpad=10)
     fig.suptitle('Currents extracted from bouy displacement data', fontsize=14)
-
+    cmap = plt.get_cmap('coolwarm')
     for single in dfs_to_be_plot:
         print(single)
         lon = single['LONGITUDE'].tolist()
@@ -90,8 +95,13 @@ def plot_currents(min_lon, max_lon, min_lat, max_lat, min_depth, max_depth,
         lon = lon[::dif]
         lat = lat[::dif]
         curve = bezier_curve(lon, lat)
-        ax.plot(curve[:, 0], curve[:, 1])
-        ax.arrow(lon[-1], lat[-1], (lon[-1]-lon[0])/10, (lat[-1]-lat[0])/10, length_includes_head=True, head_width=0.7, head_length=1, fc='red', ec='red')
+        ax.plot(curve[:, 0], curve[:, 1], color=cmap(single['TEMP'].mean()/20.0))
+        vl = single['TEMP'].mean()/20.0
+        if vl > 0.5:
+            cl = 'red'
+        else:
+            cl = 'blue'
+        ax.arrow(lon[-1], lat[-1], (lon[-1]-lon[0])/10, (lat[-1]-lat[0])/10, length_includes_head=True, head_width=0.7, head_length=1, fc=cl, ec=cl)
 
     ax.set_xticks(np.arange(min_lon, max_lon+1, (max_lon-min_lon)/10), crs=ccrs.PlateCarree())
     ax.set_yticks(np.arange(min_lat, max_lat+1, (max_lat-min_lat)/10), crs=ccrs.PlateCarree())
@@ -100,5 +110,6 @@ def plot_currents(min_lon, max_lon, min_lat, max_lat, min_depth, max_depth,
 
 
 if __name__ == "__main__":
-    plot_currents(-180,180,-90,90,0,10,'2015-01','2015-07',data_file='data.csv',current_count=700)
+    plot_currents(-180,180,-90,90,0,10,'2015-01','2015-06',current_count=700)
+    plot_currents(-180,180,-90,90,0,10,'2015-07','2015-12',current_count=700)
 
