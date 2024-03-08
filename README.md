@@ -41,7 +41,7 @@ _Getting the code to run can be done in one step._
 
 All the files are run in a similar manner.
 
-_To generate the sea surface temperature plots on a global scale run:_
+To generate the sea surface temperature plots on a global scale run:
     ```
     python global_temp.py
     ```
