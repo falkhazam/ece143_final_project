@@ -3,13 +3,14 @@ Welcome to Group 4's ECE 143 final project. Here is a collection of code dedicat
 
 ## File Descriptions:
 
-1. correlation_heatmap.py - correlation heatmap of parameters
-2. currents.py - global current vectors from buoy dispalcement (small time scale)
-3. global_temp.py - SST around the globe
-4. temp_vs_depth.py - normalized temp vs depth plots (similar to latitude plot, split into latitude bins first and normalize each bin to remove latitude dependency)
-5. temp_vs_latitude - normalized temp vs latitude plots (normalized wrt longitude, maybe average the temp across each line of latitude? i.e. splitinto 180 latitude bins and average each bin before normalizing)
-6. temp_vs_time - CA coast temp vs time plots
-
+1. [global_temp.py](https://github.com/falkhazam/ece143_final_project/blob/main/global_temp.py) - SST around the globe
+2. [currents.py](https://github.com/falkhazam/ece143_final_project/blob/main/currents.py) - global current vectors from buoy dispalcement (small time scale)
+3. [correlation_heatmap.py](https://github.com/falkhazam/ece143_final_project/blob/main/correlation_heatmap.py) - correlation heatmap of ocean physical properties and parameters
+4. [temp_vs_depth.py](https://github.com/falkhazam/ece143_final_project/blob/main/temp_vs_depth.py) - normalized temp vs depth plots
+5. [temp_vs_abs(latitude).py](https://github.com/falkhazam/ece143_final_project/blob/main/temp_vs_abs(latitude).py) - normalized temp vs latitude plots
+6. [temp_vs_time](https://github.com/falkhazam/ece143_final_project/blob/main/temp_vs_time_CA.py) - CA coast temp vs time plots
+7. [correlation_heatmap.ipynb](https://github.com/falkhazam/ece143_final_project/blob/main/CorrelationHeatmap.ipynb) - correlation heatmap of parameters written using jupyter notebook
+8. [Sal_Vs_Temp_2.py](https://github.com/falkhazam/ece143_final_project/blob/main/Sal_Vs_Temp_2.py) - salinity vs temperature plots
 
 ## Getting Started
 
