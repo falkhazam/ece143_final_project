@@ -31,7 +31,7 @@ if __name__ == "__main__":
     time = np.array([datetime.strptime(time_string, '%Y-%m-%d %H:%M:%S') for time_string in time_strings])
     plt.grid(True)
 
-    plt.title('Temperature Vs. Time (2015)')
+    plt.title('Temperature Vs. Time (California, 2015)')
 
     plt.gca().xaxis.set_major_formatter(mdates.DateFormatter('%B'))
 
