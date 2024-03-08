@@ -25,26 +25,22 @@ Welcome to Group 4's ECE 143 final project. Here is a collection of code dedicat
 
 ### Installation
 
-_Getting the code to run can be done in one step._
+_Getting the code on your machine can be done in one step._
 
 1. Clone the repo
    ```sh
    git clone https://github.com/falkhazam/ece143_final_project.git
    ```
 
-<!-- <p align="right">(<a href="#readme-top">back to top</a>)</p> -->
-
 
 ## Usage
 
-All the files are run in a similar manner.
+_All the files are run in a similar manner._
 
-To generate the sea surface temperature plots on a global scale run:
+- To generate the sea surface temperature plots on a global scale run:
     ```
     python global_temp.py
     ```
-
-<!-- <p align="right">(<a href="#readme-top">back to top</a>)</p> -->
 
 
 ## Resources:
