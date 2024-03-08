@@ -11,16 +11,6 @@ Welcome to Group 4's ECE 143 final project. Here is a collection of code dedicat
 6. temp_vs_time - CA coast temp vs time plots
 
 
-## Dependencies:
-
-1. [argopy](https://github.com/euroargodev/argopy) - can be installed with "pip install argopy" or conda
-2. [matplotlib](https://matplotlib.org/) - can be installed with "pip install matplotlib" or conda
-3. [numpy](https://numpy.org/) - can be installed with "pip install numpy" or conda
-4. [cartopy](https://scitools.org.uk/cartopy/docs/latest/) - can be installed with "pip install cartopy" or conda
-5. [Ipython](https://ipython.org/) - can be installed with "pip install Ipython" or conda
-6. Python3.9.x
-
-
 ## Resources:
 
 1. [Euro-Argo Github Page](https://github.com/euroargodev)
@@ -37,40 +27,38 @@ Welcome to Group 4's ECE 143 final project. Here is a collection of code dedicat
 This is an example of how you may give instructions on setting up your project locally.
 To get a local copy up and running follow these simple example steps.
 
-### Prerequisites
+### Dependencies:
 
-This is an example of how to list things you need to use the software and how to install them.
-* npm
-  ```sh
-  npm install npm@latest -g
-  ```
+1. [argopy](https://github.com/euroargodev/argopy) - can be installed with "pip install argopy" or conda
+2. [matplotlib](https://matplotlib.org/) - can be installed with "pip install matplotlib" or conda
+3. [numpy](https://numpy.org/) - can be installed with "pip install numpy" or conda
+4. [cartopy](https://scitools.org.uk/cartopy/docs/latest/) - can be installed with "pip install cartopy" or conda
+5. [Ipython](https://ipython.org/) - can be installed with "pip install Ipython" or conda
+6. Python3.9.x
 
 ### Installation
 
-_Below is an example of how you can instruct your audience on installing and setting up your app. This template doesn't rely on any external dependencies or services._
+_Getting the code to run can be done in one step._
 
 1. Clone the repo
    ```sh
-   git clone https://github.com/your_username_/Project-Name.git
+   git clone https://github.com/falkhazam/ece143_final_project.git
    ```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 
-<!-- USAGE EXAMPLES -->
 ## Usage
 
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
+All the files are run in a similar manner.
 
 _To generate the sea surface temperature plots on a global scale run:_
-    ```sh
+    ```
     python global_temp.py
     ```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
 
 
 
