@@ -13,8 +13,6 @@ Welcome to Group 4's ECE 143 final project. Here is a collection of code dedicat
 
 ## Getting Started
 
-This is an example of how you may give instructions on setting up your project locally.
-To get a local copy up and running follow these simple example steps.
 
 ### Dependencies:
 
