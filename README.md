@@ -11,6 +11,7 @@ Welcome to Group 4's ECE 143 final project. Here is a collection of code dedicat
 6. [temp_vs_time](https://github.com/falkhazam/ece143_final_project/blob/main/temp_vs_time_CA.py) - CA coast temp vs time plots
 7. [correlation_heatmap.ipynb](https://github.com/falkhazam/ece143_final_project/blob/main/CorrelationHeatmap.ipynb) - correlation heatmap of parameters written using jupyter notebook
 8. [Sal_Vs_Temp_2.py](https://github.com/falkhazam/ece143_final_project/blob/main/Sal_Vs_Temp_2.py) - salinity vs temperature plots
+9. []() - the slides of our presentation in pdf format
 
 ## Getting Started
 
