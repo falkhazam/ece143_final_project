@@ -23,9 +23,9 @@ Welcome to Group 4's ECE 143 final project. Here is a collection of code dedicat
 3. [numpy](https://numpy.org/) - can be installed with "pip install numpy" or conda
 4. [cartopy](https://scitools.org.uk/cartopy/docs/latest/) - can be installed with "pip install cartopy" or conda
 5. [Ipython](https://ipython.org/) - can be installed with "pip install Ipython" or conda
-6. [scipy](https://scipy.org/)
-7. [seaborn](https://seaborn.pydata.org/)
-6. Python3.9.x
+6. [scipy](https://scipy.org/) - can be installed with "pip install scipy" or conda
+7. [seaborn](https://seaborn.pydata.org/) - can be installed with "pip install seaborn" or conda
+8. Python3.9.x
 
 ### Installation
 
