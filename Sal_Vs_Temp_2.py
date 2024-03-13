@@ -6,7 +6,7 @@ import numpy as np
 
 f = argopy.DataFetcher()
 f
-f = f.region([-180, 180, -90, 90, 0, 20, '2011-01', '2013-01'])
+f = f.region([-180, 180, 75, 80, 0, 100, '2010-01', '2014-01'])
 f.data
 
 latitude_data = f.data['LATITUDE'].values
