@@ -13,6 +13,7 @@ Welcome to Group 4's ECE 143 final project. Here is a collection of code dedicat
 8. [Sal_Vs_Temp.py](https://github.com/falkhazam/ece143_final_project/blob/main/Sal_Vs_Temp_2.py) - salinity vs temperature plots
 9. [ECE 143 Final Project.pdf](https://github.com/falkhazam/ece143_final_project/blob/main/ECE%20143%20Final%20Project.pdf) - the slides of our presentation in pdf format
 10. [temp_vs_latitude.py](https://github.com/falkhazam/ece143_final_project/blob/main/temp_vs_latitude.py) - plots the sea surface temperature vs the latitude
+11. [All_plots.ipynb](https://github.com/falkhazam/ece143_final_project/blob/main/All_plots.ipynb) - all of the plots for our project plotted in one file
 
 ## Getting Started
 
