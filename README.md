@@ -25,7 +25,8 @@ Welcome to Group 4's ECE 143 final project. Here is a collection of code dedicat
 5. [Ipython](https://ipython.org/) - can be installed with "pip install Ipython" or conda
 6. [scipy](https://scipy.org/) - can be installed with "pip install scipy" or conda
 7. [seaborn](https://seaborn.pydata.org/) - can be installed with "pip install seaborn" or conda
-8. Python3.9.x
+8. [pandas](https://pandas.pydata.org/) - can be installed with "pip install pandas" or conda
+9. Python3.9.x
 
 ### Installation
 
